@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+     background-size: 100%;
+ }
+ .emoji{
+     font-size: 10rem;
+     cursor: pointer;
+     user-select: none;
+ }
+ .closed{
+     display: none;
+ }
+ .open{
+     display: none;
+ }
+ .active{
+     display: block;
+ }
