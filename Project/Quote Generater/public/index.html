@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <style>
+        body {
+            background-color: #f7f7ff;
+            position: relative;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        #app {
+            background-color: #3949ab;
+            margin: 40px auto;
+            border: 1px solid #ccc;
+            width: 480px;
+            height: 480px;
+            padding: 40px;
+        }
+
+        #logo {
+            width: 100px;
+            margin-left: -5px;
+        }
+
+        #separator {
+            width: 400px;
+            height: 3px;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        #quote {
+            font-size: 40px;
+            vertical-align: top;
+            margin: 40px 0 20px;
+        }
+
+        #author {
+            font-size: 24px;
+        }
+
+        #controls {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <img src="double-quotes.png" id="logo">
+        <p id="quote">No Caste, No Religon, No God.</p>
+        <span id="separator"></span>
+        <p id="author">Akash Atheist</p>
+    </div>
+    <div id="controls">
+        <input type="text" name="quote" placeholder="Quote...">
+        <input type="text" name="author" placeholder="Author...">
+        <button id="btnBackground">Background</button>
+        <button id="btnDownload">Download</button>
+    </div>
+    <script>
+        // let app = document.querySelector("#app");
+        let btnDownload = document.querySelector("#btnDownload");
+        let quoteInput = document.querySelector("[name=quote]");
+        let quoteText = document.querySelector("#quote");
+        let btnBackground = document.querySelector("#btnBackground");
+
+        let colors = ["#ffd600", "#DA70D6", "#00008B", "#FF1493", "#FF4500", " #FFA500", "#7CFC00", "#008000",
+            "#3CB371", "#4169E1", "#FF1493", "#9400D3"]
+
+        btnBackground.addEventListener("click", function (e) {
+            let index = Math.floor(Math.random() * colors.length);
+            let randomColor = colors[index];
+            app.style.background = randomColor;
+        });
+
+        quoteInput.addEventListener("keyup", function (e) {
+            quoteText.innerText = e.currentTarget.value;
+        });
+
+        let authorInput = document.querySelector("[name=author]");
+        let authorText = document.querySelector("#author");
+
+        authorInput.addEventListener("keyup", function (e) {
+            authorText.innerText = e.currentTarget.value;
+        });
+
+        btnDownload.addEventListener("click", function () {
+            let app = document.querySelector("#app");
+            html2canvas(app).then(canvas => {
+                let a = document.createElement("a");
+                a.download = Math.floor(Math.random() * 5000) + ".png";
+                a.href = canvas.toDataURL();
+                console.log(a.href);
+                a.click();
+                
+            });
+        });
+
+    </script>
+</body>
+
+</html>

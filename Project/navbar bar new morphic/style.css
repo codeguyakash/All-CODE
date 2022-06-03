@@ -1,0 +1,60 @@
+
+
+ul{
+    list-style:none;
+    display: inline-flex;
+}
+
+li{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifz;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width:0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 100%;
+}
+a:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    ul {
+      max-width: 99% !important;
+    }
+  } 

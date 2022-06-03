@@ -1,0 +1,41 @@
+.container{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: Scbced1;
+    text-align: center;
+    
+
+}
+.paragraph-style{
+    text-align: center;
+    border: 1px solid black;
+    color: red;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inputField{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+#addToDo{
+    background-color: #007aff;
+    color: white;
+    border: 2px solid #0c60b9;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+h2{
+    text-align: center;
+}

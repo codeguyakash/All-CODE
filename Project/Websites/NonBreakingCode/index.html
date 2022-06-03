@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <title>Non Breaking Code</title>
+    <link rel="icon" href="Image/Logo.gif">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <!-- Navbar Start from Here -->
+    <nav class="navbar navbar-expand-md navbar-light bg-warning ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Image/Logo.gif" alt="Logo" height="50" width="50" /></a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item table-active">
+                        <a class="nav-link text-white " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" aria-current="page" href="Videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" aria-current="page" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Start Login button content -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Login
+                </button>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="" id="bdr">
+                                    <div class="form-group">
+                                        <label for="">Name</label>
+                                        <input type="text" class="form-control" placeholder="Name" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Password</label>
+                                        <input type="password" class="form-control" placeholder="Password" required />
+                                        <small id="passwordHelpInline" class="text-muted">Must be 8-20 characters
+                                            long.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Log in" class="form-control btn-primary" />
+                                    </div>
+                                    <!--finish Login button content -->
+
+                                    <!--Start Signup section -->
+
+                                    <button type="button" class="btn btn-success form-control" data-toggle="modal"
+                                        data-target="#myModal1">
+                                        Signup
+                                    </button>
+                                    <div class="modal fade" id="myModal1">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Signup</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        &times;
+                                                    </button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <form action="" id="bdr">
+                                                        <div class="form-group">
+                                                            <label for="">Name</label>
+                                                            <input type="text" class="form-control" placeholder="Name"
+                                                                required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Phone No.</label>
+                                                            <input type="tel" class="form-control"
+                                                                placeholder="Phone No." required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Email</label>
+                                                            <input type="email" class="form-control" placeholder="Email"
+                                                                required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Password" required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Confirmed Password</label>
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Confirmed Password" required />
+                                                            <small id="passwordHelpInline" class="text-muted">Must
+                                                                be 8-20 characters
+                                                                long.</small>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="submit" value="Signup"
+                                                                class="form-control btn-success" />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- finish Signup section -->
+                            </div>
+                        </div>
+                    </div>
+    </nav>
+    <!-- Navbar Finish Here -->
+
+    <!-- Carousel Start -->
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 col-md-3  col-lg-2 border  text-center pt-2 ">
+                <img src="Image/YouTube_Logo-removebg-preview.png" alt="" width="150px" height="150px">
+                <div class="mt-1">
+                    <ul class="list-group">
+                        <!-- <a href="" ><li class="list-group-item">All Courses</li></a> -->
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                                <h5>All Course's</h5>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                                        alt="logo" width="20px" height="20px"></span> Pyhton</a>
+                            <a href="https://www.youtube.com/channel/UC51w6Cr59V-8sbndpySH0oA"
+                                class="list-group-item list-group-item-action list-group-item-light"
+                                target="_blank"><span><img src="https://image.flaticon.com/icons/png/512/888/888859.png"
+                                        alt="logo" width="20px" height="20px"></span> HTML</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://img.icons8.com/color/50/000000/bootstrap.png"" alt=" logo"
+                                        width="20px" height="20px"></span> BootStrap</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://image.flaticon.com/icons/png/512/888/888847.png"" alt=" logo"
+                                        width="20px" height="20px"></span> CSS</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://img.icons8.com/color/144/000000/kotlin.png"" alt=" logo"
+                                        width="20px" height="20px"></span> Kotlin</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://image.flaticon.com/icons/png/512/919/919828.png" alt="logo"
+                                        width="20px" height="20px"></span> JavaScript</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo"
+                                        width="20px" height="20px"></span> Java</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light"><span><img
+                                        src="https://image.flaticon.com/icons/png/512/358/358879.png" alt="logo"
+                                        width="20px" height="20px"></span> C Language</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-8">
+                <div class="container mt-2 pl-0 pr-0">
+                    <div class="jumbotron mb-2 pb-4 pt-4">
+                        <h1 class="display-4 text-center">Welcome Home</h1>
+                        <h5 class="text-center">Hii, This is AKASH and most Welcome to Your own Blog / Website. Here you
+                            will find a lot of Programming Videos, Tutorials related to
+                            Education, etc.</h5>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                            data-interval="2000">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <video autoplay muted id="video" class="d-block w-100">
+                                        <source src="Videos/pexels-hugo-butery-7272375.mp4">
+                                    </video>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/cover.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3  col-lg-2 border  text-center pt-2 ">
+                <div class="mt-1">
+                    <img src="Image/Untitled design.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Carousel Finish -->
+</body>
+
+<!-- Footer Session Start-->
+<footer>
+    <div class="container-fluid m-0 sticky-top">
+        <div class="row text-center mt-2 mb-0 bg-warning justify-content-center ">
+            <div class="col-12 pt-2">
+                <h6>
+                    NonBreakingCode.Com <br>
+                    Copyright <img src="https://image.flaticon.com/icons/png/512/1294/1294391.png" alt="" height="15px">
+                    2021-2022.
+                </h6>
+            </div>
+
+            <div class="pb-2 px-2">
+                <a href="https://www.youtube.com/channel/UC51w6Cr59V-8sbndpySH0oA" target="_blank"><img
+                        src="https://cdn-icons.flaticon.com/png/512/3669/premium/3669688.png?token=exp=1645603689~hmac=4cf4a25bee37a5d2b7252f461c333802" alt="YouTube" width="30"
+                        height="30" /></a>
+            </div>
+            <div class="pb-2 px-2">
+                <a href="https://www.facebook.com/nonbreakingcode" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="facebook" width="30"
+                        height="30" /></a>
+            </div>
+            <div class="pb-2 px-2">
+                <a href="https://twitter.com/NonBreakingCode" target="_blank"><img
+                        src="https://image.flaticon.com/icons/png/512/1384/1384017.png" alt="Twitter" width="30"
+                        height="30" /></a>
+            </div>
+            <div class="pb-2 px-2">
+                <a href="https://www.instagram.com/nonbreakingcode/" target="_blank"><img
+                        src="https://image.flaticon.com/icons/png/512/1384/1384015.png" alt="Instagram" width="30"
+                        height="30" /></a>
+            </div>
+            <div class="pb-2 px-2">
+                <a href="https://github.com/NonBreakingCode" target="_blank"><img
+                        src="https://image.flaticon.com/icons/png/512/733/733609.png" alt="Instagram" width="30"
+                        height="30" /></a>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+<!-- Footer Session Finish-->
+
+</html>

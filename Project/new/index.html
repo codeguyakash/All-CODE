@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="outputText">Hello Guys</p>
+    <label for="inputText1">Paragraph</label>
+    <input type="text" name="inputText1" placeholder="type1">
+    <label for="input">Heading1</label>
+    <input type="text" name="inputText2" placeholder="type2">
+    <button id="inputAdd">+</button>
+    <div id="container"></div>
+
+    <script>
+        let outputText = document.querySelector("#outputText");
+        let inputText1 = document.querySelector("[name=inputText1]");
+        let inputText2 = document.querySelector("[name=inputText2]");
+        let container = document.querySelector("#container");
+        let inputAdd = document.querySelector("#inputAdd");
+
+        inputText1.addEventListener("keypress", function(){
+            outputText.innerText = inputText1.value;
+        });
+        inputAdd.addEventListener("click", function () {
+            var Heading1 = document.createElement("h1");
+            Heading1.classList.add("Head1");
+            Heading1.innerText = inputText2.value;
+            container.appendChild(Heading1);
+
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
