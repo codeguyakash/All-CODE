@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  background: #ecf0f3;
+}
+input {
+  height: 100px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background: #90ac84;
+  border: none;
+  width: 350px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Tomorrow", sans-serif;
+  box-shadow: inset 6px 6px 6px #588843, inset -6px -6px 6px #98bd87;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: 1000;
+  font-family: "Tomorrow", sans-serif;
+  transition: 0.5s;
+  border-radius: 60px;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+}
+
+button:hover {
+  box-shadow: none;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.BTNREMOVE {
+  width: 170px;
+  background: red;
+  font-family: "Tomorrow", sans-serif;
+  color: white;
+}
+
+.BTNREMOVE:hover {
+  color: white;
+  box-shadow: none;
+  font-family: "Tomorrow", sans-serif;
+  box-shadow: inset 6px 6px 6px rgb(194, 6, 6),
+    inset -6px -6px 6px rgb(219, 71, 71);
+}
+.btnequal:hover {
+  color: white;
+  box-shadow: none;
+  box-shadow: inset 6px 6px 6px #c5840b, inset -6px -6px 6px #f0b74d;
+}
+.btnequal {
+  background-color: orange;
+  color: white;
+}
+.row {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: #ecf0f3;
+  border-radius: 40px;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+.container {
+  border-radius: 20px;
+  background: #ecf0f3;
+}
+
