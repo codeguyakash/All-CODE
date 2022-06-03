@@ -1,0 +1,16 @@
+body{
+    background-image: linear-gradient(to right, rgb(47, 47, 141) , rgb(228, 66, 93));
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn{
+    color:white;
+    background-color: rgb(201, 73, 94);
+}

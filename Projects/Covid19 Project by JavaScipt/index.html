@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <title>Covid-19</title>
+    <script src="Data.js"></script>
+    <!-- <script src="index.js"></script> -->
+
+</head>
+<body>
+    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+        <div class="container">
+            <div class="container-fluid">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-5">
+                      <li class="breadcrumb-item" aria-current="page">Covid Data</li>
+                    </ol>
+                  </nav>
+
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-primary h-100">
+                            <div class="card-body">
+                                <div class="mr-5" id="totalCount">Total - 10</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-warning o-hidden h-100">
+                            <div class="card-body">
+                                <div class="mr-5" id="recoverdCount">Recoverd-20</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-success o-hidden h-100">
+                            <div class="card-body">
+                                <div class="mr-5" id="activeCount">Active-30</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-danger o-hidden h-100">
+                            <div class="card-body">
+                                <div class="mr-5" id="deathCount">Deaths-40</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-table"></i>State Wise
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-border" id="dataTable" width="100%" cellspacing="0" >
+                                <thead>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>TotalConfirmed</th>
+                                        <th>Discharged</th>
+                                        <th>Deaths</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Delhi</td>
+                                        <td>5326</td>
+                                        <td>4654</td>
+                                        <td>7846</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </body>
+    <script src="index.js"></script>
+</body>
+</html>
