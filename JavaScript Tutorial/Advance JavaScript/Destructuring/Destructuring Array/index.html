@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring Array</title>
+</head>
+
+<body>
+    <h1>Destructuring Array</h1>
+    <script>
+        // Example 1
+        // let user1 = ["akash", "BCA", 25, 2004073164]
+        // let [name, courses, age, rollnumber] = user;
+
+        // console.log(name);
+        // console.log(courses);
+        // console.log(age);
+        // console.log(rollnumber);
+
+        // Example 2 Nested Array
+        // let user2 = ["akash", "BCA", 25, 2004073164 ,["Delhi",25000]]
+        // let [names, course, ages, rollnumbers,[city,salary]] = user2;
+
+        // console.log(city);
+        // console.log(salary);
+
+        // Example 3 With Rest Operator
+
+        // let user3 = ["akash", "BCA", 25, 2004073164];
+        // let [name, ...remvalues] = user3;
+
+        // console.log(name);
+        // console.log(remvalues);
+
+        // Example 4 With function
+        // function user4([name,course, age,rollnumber]){
+        //     console.log(name);
+        //     console.log(course);
+        //     console.log(age);
+        //     console.log(rollnumber);
+
+        // }
+
+        // user4(["akash", "BCA", 25, 2004073164]);
+
+        // Example 5 With function
+        function user5() {
+            return ["akash", "BCA", 25, 2004073164];
+        }
+
+        let [name, course, age, rollnumber] = user5();
+
+        console.log(name);
+        console.log(course);
+        console.log(age);
+        console.log(rollnumber);
+    </script>
+</body>
+
+</html>

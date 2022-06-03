@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Object</title>
+</head>
+
+<body>
+    <h1>Destructuring Object</h1>
+    <script>
+        // Example 1 you can't take differant variable name 
+        let user = {
+            name: "Akash",
+            age: 22,
+            city: "Delhi"
+        }
+        
+        let { name, age, city } = user;
+        console.log(name,);
+        console.log(age);
+        console.log(city);
+        
+        // Example 2 alise name you can take any name of variable like this 
+        let { name: n, age: a, city: c } = user;
+
+        console.log(n);
+        console.log(a);
+        console.log(c);
+
+    </script>
+
+</body>
+
+</html>

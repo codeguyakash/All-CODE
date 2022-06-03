@@ -1,0 +1,59 @@
+/* first  Start*/
+#thenext {
+    background-image: url(https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    text-align: center;
+    color: white;
+    text-shadow: -3px -3px 10px red;
+    font-family: "Courier New", Courier, monospace;
+    background-size: cover;
+  }
+  /* first  Finish*/
+  /* Second  Start*/
+  #section2 {
+    background-image:url(https://images.pexels.com/photos/131634/pexels-photo-131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+  }
+  #content {
+    color: white;
+    text-shadow: -3px -3px 10px red;
+    font-family: "Courier New", Courier, monospace;
+  }
+  #right {
+    height: 500px;
+    text-align: center;
+    margin-top: 10%;
+    padding-left: 30%;
+    font-size: 30px;
+    text-align: left;
+  }
+  /* Second  Finish*/
+  /* Third  Finish*/
+  #section3 {
+    background-image: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+  }
+  #content1 {
+    color: white;
+    text-shadow: -3px -3px 10px red;
+    font-family: "Courier New", Courier, monospace;
+  }
+  #right1 {
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+    padding-left: 30%;
+    text-align: left;
+  
+  }
+  /* Third  Finish*/
+  .left{
+      font-size: 75px;
+      margin-top: 10%;
+      padding-left: 5%;
+      color: white;
+      text-shadow: -3px -3px 10px red;
+      font-family: "Courier New", Courier, monospace;
+  }
+  
+  

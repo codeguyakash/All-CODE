@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    body,
+    html {
+      position: relative;
+      height: 100%;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 70px;
+      font-family: 'Courier New', Courier, monospace
+    }
+
+    #one {
+      height: 100px;
+      z-index: 100;
+      background-color: orangered;
+
+    }
+
+    #two {
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 48px;
+      z-index: -50;
+      background-color: orangered;
+      transform: skewY(3deg);
+      /* opacity: 0.6; */
+    }
+  </style>
+
+  <div id="one">
+    <h1>Hello guys Welcome to my Channel</h1>
+  </div>
+
+
+  <div id="two"></div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  background-color: rgba(255, 239, 206, 255);
+}
+li {
+  list-style-type: none;
+  display:inline-block;
+  padding: 30px;
+}
+a{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration-line: none;
+    color: red;
+     
+}

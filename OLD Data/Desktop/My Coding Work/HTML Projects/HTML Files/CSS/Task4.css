@@ -1,0 +1,76 @@
+.nav-link {
+  color: white !important;
+  font-size: 20px;
+}
+.rounded {
+  background-color: rgba(254, 193, 7, 255);
+  height: 300px;
+}
+.main {
+  position: relative;
+}
+#imgowner {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 4px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 1574px) {
+  .layer {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+    transform: skewY(-90deg);
+  }
+}
+.text {
+  
+  position: absolute;
+  top: 200px;
+  right: 80px;
+  z-index: 200;
+}
+
+@media (min-width: 992px) {
+  .layer {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    z-index: 100;
+    transform: skewY(-7deg);
+  }
+
+  .text {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    z-index: 200;
+  }
+}
+
+@media (min-width: 400px) {
+    .layer {
+      background-color: rgb(255, 255, 255);
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 250px;
+      z-index: 100;
+      transform: skewY(-7deg);
+    }
+  
+  .text {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+    z-index: 200;
+  }
+}

@@ -1,0 +1,17 @@
+front end
+1.html
+2.bootstrap
+3.css
+4.javascript
+5.angular/react
+
+
+
+backend
+1.node js/express js/django
+2.my sql/mongodb/sq lite
+
+
+mobile dev
+1.kotlin/dart/swift
+2.xml
